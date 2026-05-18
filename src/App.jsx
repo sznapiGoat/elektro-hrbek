@@ -742,7 +742,6 @@ function ContactForm() {
               {[
                 { icon: Phone, label: 'Telefon',        href: 'tel:+420608899606',              value: '+420 608 899 606' },
                 { icon: Mail,  label: 'E-mail',         href: 'mailto:petrhrbek@seznam.cz',    value: 'petrhrbek@seznam.cz' },
-                { icon: MapPin,label: 'Oblast působení', href: null,                                   value: 'Praha a okolí' },
               ].map(({ icon: Icon, label, href, value }) => {
                 const Inner = (
                   <div className="flex items-center gap-4">
@@ -761,6 +760,18 @@ function ContactForm() {
                   <div key={label} className="group">{Inner}</div>
                 )
               })}
+
+              {/* Address */}
+              <div className="flex items-center gap-4">
+                <div className="w-11 h-11 bg-amber-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <MapPin size={17} className="text-amber-500" />
+                </div>
+                <div>
+                  <div className="text-xs text-slate-500 font-medium">Adresa</div>
+                  <div className="text-sm font-bold text-slate-900">Havlíčkova 129/7</div>
+                  <div className="text-xs text-slate-400 mt-0.5">Liberec VII-Horní Růžodol, 460 07 Liberec</div>
+                </div>
+              </div>
 
               {/* Billing */}
               <div className="flex items-center gap-4">
