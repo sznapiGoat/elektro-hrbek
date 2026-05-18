@@ -770,7 +770,8 @@ function ContactForm() {
                 <div>
                   <div className="text-xs text-slate-500 font-medium">Fakturační údaje</div>
                   <div className="text-sm font-bold text-slate-900">Petr Hrbek</div>
-                  <div className="text-xs text-slate-400 mt-0.5">IČO: XXXXXXXX · DIČ: CZXXXXXXXX</div>
+                  <div className="text-xs text-slate-500 font-medium mt-0.5">Petr Hrbek – majitel</div>
+                  <div className="text-xs text-slate-400 mt-0.5">IČO: 07782225</div>
                 </div>
               </div>
             </div>
@@ -783,9 +784,8 @@ function ContactForm() {
               </div>
               <dl className="space-y-2">
                 {[
-                  ['Po – Pá', '8:00 – 17:00'],
-                  ['Sobota',  'dohodou'],
-                  ['Neděle',  'urgentní případy'],
+                  ['Pondělí', '09:00 – 17:30'],
+                  ['Ostatní dny', 'dohodou'],
                 ].map(([day, hours]) => (
                   <div key={day} className="flex justify-between items-center text-sm">
                     <dt className="text-slate-500">{day}</dt>
@@ -923,9 +923,7 @@ function Footer() {
           <div className="text-center text-xs leading-relaxed">
             <span className="text-slate-300 font-semibold">Petr Hrbek</span>
             <span className="mx-2 text-slate-700">·</span>
-            IČO: XXXXXXXX
-            <span className="mx-2 text-slate-700">·</span>
-            DIČ: CZXXXXXXXX
+            IČO: 07782225
           </div>
 
           {/* Copyright */}
